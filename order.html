@@ -47,8 +47,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Главная</a></li>
-              <li><a href="order.html">Заказать услугу</a></li>
+              <li><a href="index.html">Главная</a></li>
+              <li class="active"><a href="order.html">Заказать услугу</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обратная связь <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -65,44 +65,92 @@
         </div><!-- /.container-fluid -->
       </nav>
     </div>
-    <div class="container" align="left" style="padding: 20px">
-      <h1>Mercedes-Benz</h1>
-      <div >
-        <img src="img/znak.jpg" alt="znak" class="img-circle" width="15%" height="20%">
+
+  <div class="container">
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="page-header">
+      <h1>Заказ</h1>
+    </div>
+    <div class="alert alert-success" style="display:none"></div>
+    <form>
+      <fieldset class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
+        <div class="col-sm-10">
+          <input type="email" autofocus="" class="form-control" id="inputEmail3">
+        </div>
+      </fieldset>
+      <fieldset class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Введите пароль">
+        </div>
+      </fieldset>
+      <fieldset class="form-group row">
+        <label class="col-form-legend col-sm-2">Пол</label>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="men" checked>
+              М
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="women">
+              Ж
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group row">
+        <label class="col-sm-2">Дополнительные возможности</label>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Вырезка катов
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Чипануть
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox">  Поддержка
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> ТО
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group row">
+        <label class="col-sm-2"> Приложите эскиз </label>
+        <div class="col-sm-10">
+            <input type="file">
+        </div>
+      </fieldset>
+      <fieldset class="form-group row">
+        <label class="col-sm-2"> Комментарий </label>
+        <div class="col-sm-10">
+          <textarea class="form-control" rows="5"></textarea>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+          <a onClick="$('.alert').show()" class="btn btn-primary">Отправить</a>
+        </div>
       </div>
+    </form>
+</form>
     </div>
 
-    <div class="container" class="img-rounded">
-      <div class="row">
-        <div class="col-md-3"><img src="img/car1.jpg" alt="car1" class="img-responsive"></div>
-        <div class="col-md-3"><img src="img/car2.jpg" alt="car2" class="img-responsive"></div>
-        <div class="col-md-3"><img src="img/car3.jpg" alt="car3" class="img-responsive"></div>
-        <div class="col-md-3"><img src="img/car4.jpg" alt="car4" class="img-responsive"></div>
-      </div>
-    </div>
-
-    <div class="container text-center" style="padding: 20px">
-      <div class="row">
-        <div class="col-md-3">
-          <span class="glyphicon glyphicon-wrench"></span>
-          <p>Ремонт</p>
-        </div>
-          <div class="col-md-3">
-            <span class="glyphicon glyphicon-usd"></span>
-            <p>Стоимость</p>
-        </div>
-        <div class="col-md-3">
-          <span class="glyphicon glyphicon-paperclip"></span>
-          <p>Инструкция</p>
-        </div>
-        <div class="col-md-3">
-          <span class="glyphicon glyphicon-picture"></span>
-          <p>Галерея</p>
-        </div>
-      </div>
-    </div>
-
-
+  </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
