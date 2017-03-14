@@ -1,6 +1,5 @@
 $(function () {
-    $('#popover').popover();
-    $('#popover1').popover();
+    $('#navigationmap button[data-toggle="popover"]').popover();
     $('#atiTooltip').tooltip();
     $('#galleryTooltip').tooltip();
 });
