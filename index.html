@@ -91,7 +91,7 @@
                         <a class="nav-link" data-toggle="tab" href="#main">Главная</a>
                   </li>
                   <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#profile">Кабинет</a>
+                        <a class="nav-link" data-toggle="tab" href="#navigationmap">Навигация по сайту</a>
                   </li>
                   <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#routes">Маршруты</a>
@@ -129,7 +129,20 @@
             </ul>
             <div class="tab-content">
                   <div class="tab-pane" id="main">
-                        Контент главной вкладки
+                        <div class="container">Контент главной вкладки</div>
+                  </div>
+                  <div class="tab-pane" id="navigationmap">
+                      <div class="container">
+                        Это гид по сайту <a href="http://ati.su" data-toggle="tooltip" title="ati.su" data-original-title="Подсказка по умолчанию">АвтоТрансИнфо.</a>
+                      </div>
+                      <div class="container">
+                          <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                              Информер справа
+                          </button>
+                        </div>
+                        <div class="container">
+                          <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="В галерее вы сможете просмотреть фото и прочесть инфорацию о видах грузовых авто">Галерея</button>
+                        </div>
                   </div>
                   <div class="tab-pane" id="routes">
                         <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rostsimf">
