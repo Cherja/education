@@ -1,0 +1,26 @@
+body{
+  background: #aed7ff ;
+}
+hr {
+    border: none;
+    background-color: seashell;
+    color: seashell;
+    height: 2px;
+   }
+input {
+	width: 300px;
+	padding: 6px;
+	border: 3px solid white;
+	background: #aed7ff;
+	border-radius: 8px;
+}
+.topblock{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.bottomblock{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
