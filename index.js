@@ -2,6 +2,7 @@ code.onkeypress = function (e) {
 
   var charCode = e.charCode;
 
+
   if (charCode == 13){
     saveCode(code.value);
     clearInput();
