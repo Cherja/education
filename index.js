@@ -1,11 +1,17 @@
 code.onkeypress = function (e) {
-  var charCode = e.charCode;
 
+  var charCode = e.charCode;
+      
+  if (charCode == 13){
+    saveCode(code.value);
+  };
   if (charCode >= 48 && charCode <= 57) {
     return true;
   } else {
     return false;
   }
+
+
 }
 code.oninput = function() {
   var value = this.value;
