@@ -8,6 +8,7 @@ hr {
     height: 3px;
    }
 #code {
+  color : white;
 	width: 300px;
 	padding: 6px;
 	border: 3px solid white;
@@ -20,6 +21,7 @@ hr {
   margin-bottom: 5%;
 }
 .code_list{
+  color : white;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 5%;
