@@ -1,9 +1,10 @@
 code.onkeypress = function (e) {
 
   var charCode = e.charCode;
-      
+
   if (charCode == 13){
     saveCode(code.value);
+    clearInput();
   };
   if (charCode >= 48 && charCode <= 57) {
     return true;
