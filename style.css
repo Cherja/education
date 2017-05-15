@@ -8,7 +8,8 @@ hr {
     height: 3px;
    }
 #code {
-  color : white;
+  color: transparent;
+  text-shadow: 0 0 0 #333;
 	width: 300px;
 	padding: 6px;
 	border: 3px solid white;
