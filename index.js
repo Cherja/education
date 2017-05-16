@@ -40,7 +40,3 @@ code.oninput = function() {
 document.onclick = function(){
   code.focus();
 }
-
-code.onclick = function () {
-  clearInput();
-}
