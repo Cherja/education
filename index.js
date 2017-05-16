@@ -27,10 +27,12 @@ function saveCode(value) {
   //result.innerHTML += "<li>" + value + "</li>";
   var elem = document.createElement("li"),
     content = document.createTextNode(value)
-
+    if (value == '') {
+      return false;
+    }
   elem.appendChild(content);
   result.parentNode.appendChild(elem);
-}
+};
 
 function clearInput() {
   code.value = ''
