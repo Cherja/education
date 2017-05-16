@@ -1,12 +1,11 @@
-code.onkeypress = function (e) {
-
+code.onkeypress = function(e) {
   var charCode = e.charCode;
 
-
-  if (charCode == 13){
+  if (charCode == 13) {
     saveCode(code.value);
     clearInput();
   };
+
   if (charCode >= 48 && charCode <= 57) {
     return true;
   } else {
@@ -27,7 +26,7 @@ code.oninput = function() {
 function saveCode(value) {
   //result.innerHTML += "<li>" + value + "</li>";
   var elem = document.createElement("li"),
-      content = document.createTextNode(value)
+    content = document.createTextNode(value)
 
   elem.appendChild(content);
   result.parentNode.appendChild(elem);
