@@ -26,12 +26,13 @@ code.oninput = function() {
 
 function saveCode(value) {
   //result.innerHTML += "<li>" + value + "</li>";
-  var elem =document.createElement("li")
-      content=document.createTextNode(value)
+  var elem = document.createElement("li"),
+      content = document.createTextNode(value)
 
   elem.appendChild(content);
   result.parentNode.appendChild(elem);
 }
+
 function clearInput() {
   code.value = ''
 }
