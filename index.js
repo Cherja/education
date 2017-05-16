@@ -37,3 +37,7 @@ function saveCode(value) {
 function clearInput() {
   code.value = ''
 }
+
+document.onclick = function(){
+  document.getElementById('code').focus();
+}
