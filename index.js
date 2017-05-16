@@ -28,9 +28,9 @@ function saveCode(value) {
   //result.innerHTML += "<li>" + value + "</li>";
   var elem =document.createElement("li")
       content=document.createTextNode(value)
-      wrapped = document.getElementById('result')
+
   elem.appendChild(content);
-  wrapped.parentNode.appendChild(elem);
+  result.parentNode.appendChild(elem);
 }
 function clearInput() {
   code.value = ''
