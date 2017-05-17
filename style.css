@@ -73,7 +73,9 @@ hr {
   cursor: pointer;
   background: url(img/icons/close.png) 50% no-repeat;
   /* добавляем прозрачность кнопке отправки */
-  opacity: 5;
+  opacity: 1;
+
+  display : none;
 }
 /* при наведении курсора меняем прозрачность кнопки отправки */
 .search .submit:hover {

@@ -26,10 +26,13 @@ function saveCode(value) {
 //3.Функция очистки инпута.
 function clearInput() {
   code.value = ''
+  sub.style.display='none';
 }
 //4.Проверка строки на изменение и при количестве 12 символов добавление в кодлист.
 code.oninput = function() {
   var value = this.value;
+  // if (!value)
+  sub.style.display='inline';
 
   if (value.length == 12) {
     saveCode(value);
