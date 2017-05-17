@@ -70,7 +70,7 @@ hr {
   /* растягиваем кнопку на всю высоту формы */
   height: 100%;
   cursor: pointer;
-  background: url(close.png) 50% no-repeat;
+  background: url(img/icons/close.png) 50% no-repeat;
   /* добавляем прозрачность кнопке отправки */
   opacity: 0.5;
 }
