@@ -49,6 +49,7 @@ hr {
   /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  cursor:default;
 
   border-radius: 8px;
   border: 3px solid white;
