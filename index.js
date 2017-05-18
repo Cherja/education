@@ -46,3 +46,8 @@ document.onclick = function(){
 sub.onclick = function(){
   clearInput();
 }
+document.addEventListener("DOMContentLoaded", function() {
+  clearInput()
+  console.log("Здаровко,щегол");
+
+});
