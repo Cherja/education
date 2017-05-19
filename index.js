@@ -14,11 +14,24 @@ code.onkeypress = function(e) {
 }
 //2.Функция сохранения номера
 function saveCode(value) {
+
+
+  var arrChilds = result.childNodes,
+    limir = 10,
+    countRows = arrChilds.length
+  if (countRows >= limir) {
+    clear();
+  }
+
+
+
+
   //result.innerHTML += "<li>" + value + "</li>";
+  if (value == '') return false;
   var elem = document.createElement("li"),
     content = document.createTextNode(value);
 
-    if (value == '')return false;
+
 
   elem.appendChild(content);
   result.parentNode.appendChild(elem);
@@ -26,13 +39,13 @@ function saveCode(value) {
 //3.Функция очистки инпута.
 function clearInput() {
   code.value = ''
-  sub.style.display='none';
+  sub.style.display = 'none';
 }
 //4.Проверка строки на изменение и при количестве 12 символов добавление в кодлист.
 code.oninput = function() {
   var value = this.value;
   // if (!value)
-  sub.style.display='inline';
+  sub.style.display = 'inline';
 
   if (value.length == 12) {
     saveCode(value);
@@ -40,10 +53,10 @@ code.oninput = function() {
   }
 }
 //5.Постоянный автофокус на инпуте.
-document.onclick = function(){
+document.onclick = function() {
   code.focus();
 }
-sub.onclick = function(){
+sub.onclick = function() {
   clearInput();
 }
 document.addEventListener("DOMContentLoaded", function() {
@@ -51,3 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log("Здаровко,щегол");
 
 });
+
+result.clear = function() {
+  this.innerHTML = ''
+}
