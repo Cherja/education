@@ -14,27 +14,18 @@ code.onkeypress = function(e) {
 }
 //2.Функция сохранения номера
 function saveCode(value) {
-
-
-  var arrChilds = result.childNodes,
-    limir = 10,
-    countRows = arrChilds.length
-  if (countRows >= limir) {
-    clear();
-  }
-
-
-
-
   //result.innerHTML += "<li>" + value + "</li>";
   if (value == '') return false;
   var elem = document.createElement("li"),
     content = document.createTextNode(value);
-
-
-
   elem.appendChild(content);
-  result.parentNode.appendChild(elem);
+  result.appendChild(elem);
+  var arrChilds = result.childNodes,
+    limit = 10,
+    countRows = arrChilds.length
+  if (countRows >= limit) {
+    result.clear();
+  }
 }
 //3.Функция очистки инпута.
 function clearInput() {
@@ -51,6 +42,7 @@ code.oninput = function() {
     saveCode(value);
     clearInput();
   }
+
 }
 //5.Постоянный автофокус на инпуте.
 document.onclick = function() {
