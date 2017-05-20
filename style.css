@@ -1,3 +1,4 @@
+
 body{
   background: #aed7ff ;
 }
@@ -7,6 +8,7 @@ hr {
     color: seashell;
     height: 3px;
    }
+
 .topblock{
   text-align: center;
   margin-top: 5%;
@@ -70,15 +72,10 @@ hr {
   cursor: pointer;
 }
 #sub {
-  margin-top: 13%;
+  background-color:#aed7ff;
   border: none;
-    background: url(img/icons/closed.svg) 50% no-repeat;
-    background-size: 100%;
-    width: 55%;
-    height: 65%;
-    /* добавляем прозрачность кнопке отправки */
-    opacity: 1;
-    display : none;
+font-size: 150%;
+color: WHITE;
 }
 /* данное свойство необходимо для того, чтобы в браузерах
 ** Chrome и Safari можно было стилизовать инпуты */

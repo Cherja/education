@@ -2,57 +2,28 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>JS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>JS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="topblock">
-        <div class="search">
-            <input autofocus type="text" name="" placeholder="Введите даные" class="input" id="code">
-            <div class="submit">
-                <input type="submit" name="" value="" id="sub">
-            </div>
-        </div>
+  <div class="topblock">
+    <div class="search">
+      <input autofocus type="text" name="" placeholder="Введите даные" class="input" id="code">
+      <div class="submit">
+        <button type="button" name="button" id="sub"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
     </div>
-    <div class="code_list">
-        <h3>Список введеных номеров:</h3>
-        <ul id="result">
-        </ul>
-    </div>
+  </div>
+  <div class="code_list">
+    <h3>Список введеных номеров:</h3>
+    <ul id="result">
+    </ul>
+  </div>
 
-    <div class="photo"></div>
-
-
-
-    <style>
-        .photo {
-            width: 250px;
-            height: 400px;
-            background: url('http://cstor.nn2.ru/forum/data/forum/images/2013-08/72118687-1327200428_bleat.jpg') no-repeat;
-            background-size: contain;
-            position: relative;
-        }
-
-        .photo::after {
-
-            content: 'Учи before, блеать!';
-            /*Сюда можно вставлять иконочные шрифты, HTML или просто оставлять без текста, а сделать каким-нибудь вспомогательным элементом*/
-            display: block;
-            background: blue;
-            padding: 10px;
-
-            position: absolute;
-            top: 15px;
-            right: 0;
-
-            color: #fff;
-            font-family: sans-serif;
-        }
-    </style>
-
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
