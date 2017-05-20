@@ -2,57 +2,70 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>JS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>JS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/animation.css" type="text/css" />
+  <link rel="stylesheet" href="/css/fontello.css" type="text/css" />
+  <link rel="stylesheet" href="/css/fontello-codes.css" type="text/css" />
+  <link rel="stylesheet" href="/css/fontello-embedded.css" type="text/css" />
+  <link rel="stylesheet" href="/css/fontello-ie7.css" type="text/css" />
+  <link rel="stylesheet" href="/css/fontello-ie7-codes.css" type="text/css" />
 </head>
 
 <body>
-    <div class="topblock">
-        <div class="search">
-            <input autofocus type="text" name="" placeholder="Введите даные" class="input" id="code">
-            <div class="submit">
-                <input type="submit" name="" value="" id="sub">
-            </div>
-        </div>
+  <div class="topblock">
+    <div class="search">
+      <input autofocus type="text" name="" placeholder="Введите даные" class="input" id="code">
+      <div class="submit">
+        <input type="submit" name="" value="" id="sub">
+      </div>
     </div>
-    <div class="code_list">
-        <h3>Список введеных номеров:</h3>
-        <ul id="result">
-        </ul>
-    </div>
+  </div>
+  <div class="code_list">
+    <h3>Список введеных номеров:</h3>
+    <ul id="result">
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li class="icon-angle-left">вопросик</li>
+      <li class="icon-down">замок</li>
+    </ul>
 
-    <div class="photo"></div>
+  </div>
+
+  <div class="photo"></div>
 
 
 
-    <style>
-        .photo {
-            width: 250px;
-            height: 400px;
-            background: url('http://cstor.nn2.ru/forum/data/forum/images/2013-08/72118687-1327200428_bleat.jpg') no-repeat;
-            background-size: contain;
-            position: relative;
-        }
+  <style>
+    .photo {
+      width: 250px;
+      height: 400px;
+      background: url('http://cstor.nn2.ru/forum/data/forum/images/2013-08/72118687-1327200428_bleat.jpg') no-repeat;
+      background-size: contain;
+      position: relative;
+    }
 
-        .photo::after {
+    .photo::after {
 
-            content: 'Учи before, блеать!';
-            /*Сюда можно вставлять иконочные шрифты, HTML или просто оставлять без текста, а сделать каким-нибудь вспомогательным элементом*/
-            display: block;
-            background: blue;
-            padding: 10px;
+      content: 'Учи before, блеать!';
+      /*Сюда можно вставлять иконочные шрифты, HTML или просто оставлять без текста, а сделать каким-нибудь вспомогательным элементом*/
+      display: block;
+      background: blue;
+      padding: 10px;
 
-            position: absolute;
-            top: 15px;
-            right: 0;
+      position: absolute;
+      top: 15px;
+      right: 0;
 
-            color: #fff;
-            font-family: sans-serif;
-        }
-    </style>
+      color: #fff;
+      font-family: sans-serif;
+    }
+  </style>
 
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
