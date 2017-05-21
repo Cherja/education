@@ -9,12 +9,6 @@ hr {
   height: 3px;
 }
 
-.topblock {
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
 .code_list {
   color: white;
   text-align: center;
@@ -22,28 +16,10 @@ hr {
   margin-bottom: 5%;
 }
 
-#code::-webkit-input-placeholder {
-  color: #FFFFFF;
-}
-
-#code::-moz-placeholder {
-  color: #FFFFFF;
-}
-
-
-/*убрал подсветку*/
-
-#code :active, :hover, :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
 .search {
   /* устанавливаем необходимую ширину формы в зависимости от дизайна ** форма без проблем растягивается */
   width: 30%;
-  margin: auto;
-  border-radius: 8px;
-  border: 3px solid white;
+  margin: 5% auto;
   /* кнопку отправки будем позиционировать абсолютно, ** поэтому необходимо это свойство */
   position: relative;
 }
@@ -52,13 +28,13 @@ hr {
 /* стили для поля ввода */
 
 .input {
-  border: none;
+  border-radius: 8px;
+  border: 3px solid white;
   /* растягиваем поле ввода на всю ширину формы */
   width: 100%;
   /* за счет верхнего (8px) и нижнего (9px) внутренних отступов** регулируем высоту формы** внутренний отступ справа (37px) делаем больше левого,** т.к. там будет размещена кнопка отправки	*/
   padding: 8px 37px 9px 15px;
   /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   cursor: default;
   background: #aed7ff;
@@ -69,9 +45,31 @@ hr {
 }
 
 
+/*убрал подсветку*/
+
+.input :active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.input::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+
 /* оформляем кнопку отправки */
 
-.submit {
+#clear {
+  background-color: transparent;
+  /*Прозрачный фон*/
+  border: none;
+  padding: 0;
+  font-size: 150%;
+  color: WHITE;
   /* позиционируем кнопку абсолютно от правого края формы */
   position: absolute;
   top: 0;
@@ -82,16 +80,12 @@ hr {
   cursor: pointer;
 }
 
-#clear {
-  background-color: #aed7ff;
-  border: none;
-  font-size: 150%;
-  color: WHITE;
-}
-
 
 /* данное свойство необходимо для того, чтобы в браузерах
 ** Chrome и Safari можно было стилизовать инпуты */
+
+
+/*У ТЕБЯ НЕТ ЭТОГО ЭЛЕМЕНТА, ЗАЧЕМ СТИЛИ ДЛЯ НЕГО???*/
 
 input[type="search"] {
   -webkit-appearance: none;
