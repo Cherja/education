@@ -1,48 +1,56 @@
-
-body{
-  background: #aed7ff ;
+body {
+  background: #aed7ff;
 }
-hr {
-    border: none;
-    background-color: seashell;
-    color: seashell;
-    height: 3px;
-   }
 
-.topblock{
+hr {
+  border: none;
+  background-color: seashell;
+  color: seashell;
+  height: 3px;
+}
+
+.topblock {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.code_list{
-  color : white;
+
+.code_list {
+  color: white;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 5%;
 }
+
 #code::-webkit-input-placeholder {
-    color: #FFFFFF;
-   }
-#code::-moz-placeholder {
-    color: #FFFFFF;
-   }
-   /*убрал подсветку*/
-#code :active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
+  color: #FFFFFF;
 }
+
+#code::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+
+/*убрал подсветку*/
+
+#code :active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .search {
   /* устанавливаем необходимую ширину формы в зависимости от дизайна ** форма без проблем растягивается */
   width: 30%;
   margin: auto;
   border-radius: 8px;
   border: 3px solid white;
-
-/* кнопку отправки будем позиционировать абсолютно, ** поэтому необходимо это свойство */
+  /* кнопку отправки будем позиционировать абсолютно, ** поэтому необходимо это свойство */
   position: relative;
 }
 
+
 /* стили для поля ввода */
+
 .input {
   border: none;
   /* растягиваем поле ввода на всю ширину формы */
@@ -52,15 +60,17 @@ hr {
   /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  cursor:default;
+  cursor: default;
   background: #aed7ff;
-
   /*убрал мигающую палочку*/
   color: transparent;
   text-shadow: 0 0 0 #FFFFFF;
   outline: none;
 }
+
+
 /* оформляем кнопку отправки */
+
 .submit {
   /* позиционируем кнопку абсолютно от правого края формы */
   position: absolute;
@@ -71,14 +81,18 @@ hr {
   height: 100%;
   cursor: pointer;
 }
+
 #clear {
-  background-color:#aed7ff;
+  background-color: #aed7ff;
   border: none;
-font-size: 150%;
-color: WHITE;
+  font-size: 150%;
+  color: WHITE;
 }
+
+
 /* данное свойство необходимо для того, чтобы в браузерах
 ** Chrome и Safari можно было стилизовать инпуты */
+
 input[type="search"] {
   -webkit-appearance: none;
 }
