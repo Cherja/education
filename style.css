@@ -3,8 +3,10 @@ body {
 }
 
 .code_list {
+  width: 250px;
   color: white;
   text-align: center;
+  margin: auto;
   margin-top: 2%;
   margin-bottom: 5%;
 }
