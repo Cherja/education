@@ -15,6 +15,6 @@
 .imgproduct {
 background-size: contain;
 width: 100%;
-/*position: absolute;
-top: 0px;*/
+position: absolute;
+top: 0px;
   }
