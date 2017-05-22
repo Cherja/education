@@ -6,8 +6,8 @@
   padding-top: 5px;
   background-color: white;
   margin: 20px auto;
-  width: 200px;
-  height: 275px;
+  width: 220px;
+  height: 300px;
   border-radius: 8px;
   position: relative;
 }
@@ -21,13 +21,13 @@ border-bottom: 1px solid gray;
   .left{
     color: grey;
     position: absolute;
-    width: 100px;
+    width: 90px;
     right: 0px;
   }
 
   .quantity{
-    width: 50px;
-    height: 30px;
+    width: 40px;
+    height: 17px;
   }
 .right {
   position: absolute;
@@ -35,9 +35,13 @@ border-bottom: 1px solid gray;
 }
 
 .button{
+  color: white;
   position: absolute;
-  bottom: 5px;
-  left: 30px;
+  bottom: 7px;
+  left: 15px;
+  background: forestgreen;
+  height: 30px;
+  width: 190px;
 }
 .calculationcard {
   color: green;
