@@ -2,7 +2,7 @@
 .block1{
   /*white-space: nowrap;*/
 margin: auto;
-  width: 1200px;
+
 }
 .card:hover {
 box-shadow: -16px 14px 20px rgba(191,241,137,1);
@@ -22,7 +22,7 @@ box-shadow: -16px 14px 20px rgba(191,241,137,1);
   -webkit-transition: all 1s ease-in-out;
   padding-top: 7px;
   background-color: white;
-  margin:50px 5%;
+  margin:50px 7%;
   width: 220px;
   height: 320px;
   border-radius: 8px;
