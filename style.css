@@ -1,44 +1,55 @@
 /*quantity-количество,*/
-
-.gradient {
-  background: linear-gradient(to right, #1D976C, #93F9B9);
+.gradient{
+  background: linear-gradient(to right ,#1D976C, #93F9B9);
 }
-
-.card {
-  padding-top: 5px;
+.card{
+  padding-top: 7px;
   background-color: white;
   margin: 20px auto;
   width: 220px;
   height: 320px;
   border-radius: 8px;
+
 }
 
 .imgproduct {
-  width: 100%;
-}
+width: 100%;
+  }
 
-.left {
-  float: left;
-  width: 110px;
-}
+
+
+
+
+  .left{
+    float: left;
+    width: 60%;
+    /*background: yellow;*/
+    height: 40px;
+
+  }
+
 
 .right {
+  height: 40px;
+  width: 40%;
   color: grey;
   float: left;
-}
+  /*background: blue;*/
 
-.quantity {
+}
+.quantity{
   width: 40px;
   height: 17px;
 }
 
-.button {
+.button{
   color: white;
+  width: 100%;
+
   background: forestgreen;
   height: 30px;
-  width: 190px;
-}
 
+}
 .calculationcard {
   color: green;
 }
@@ -47,13 +58,7 @@
   background: chartreuse;
 }
 
-.secondblock {
-  padding-top: 10px;
-  padding-left: 12px;
-  height: 40px;
-}
+.secondblock{
+  padding: 10px;
 
-.bottom {
-  margin: auto;
-  width: 190px;
 }
