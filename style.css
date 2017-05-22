@@ -7,42 +7,51 @@
   background-color: white;
   margin: 20px auto;
   width: 220px;
-  height: 300px;
+  height: 320px;
   border-radius: 8px;
-  position: relative;
+
 }
 
 .imgproduct {
-background-size: contain;
 width: 100%;
-border-bottom: 1px solid gray;
   }
 
   .left{
-    color: grey;
-    position: absolute;
-    width: 90px;
-    right: 0px;
+    float: left;
+    width: 110px;
+
   }
 
-  .quantity{
-    width: 40px;
-    height: 17px;
-  }
+
 .right {
-  position: absolute;
-  left: 5px;
+
+  color: grey;
+  float: left;
+}
+.quantity{
+  width: 40px;
+  height: 17px;
 }
 
 .button{
   color: white;
-  position: absolute;
-  bottom: 7px;
-  left: 15px;
+  margin: auto;
   background: forestgreen;
   height: 30px;
   width: 190px;
 }
 .calculationcard {
   color: green;
+}
+
+.button:hover {
+  background: chartreuse;
+}
+
+.secondblock{
+  padding-top: 10px;
+  padding-left: 12px;
+  height: 40px;
+border-top:1px solid gray;
+
 }
