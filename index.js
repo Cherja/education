@@ -48,7 +48,7 @@ code.oninput = function() {
 document.onclick = function() {
   code.focus();
 }
-clear.onclick = function() {
+icon.onclick = function() {
   clearInput();
 }
 document.addEventListener("DOMContentLoaded", function() {

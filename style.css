@@ -56,9 +56,14 @@ body {
   /* позиционируем кнопку абсолютно от правого края формы */
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0px;
   width: 37px;
   /* растягиваем кнопку на всю высоту формы */
   height: 100%;
+
+}
+
+#icon {
   cursor: pointer;
+
 }
