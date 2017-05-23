@@ -1,50 +1,44 @@
 /*quantity-количество,*/
-.block1{
+
+.block1 {
   /*white-space: nowrap;*/
-margin: auto;
-
+  margin: auto;
 }
+
 .card:hover {
-box-shadow: -16px 14px 20px rgba(191,241,137,1);
--webkit-transform: translate(0,-10px);
--moz-transform: translate(0,-10px);
--o-transform: translate(0,-10px);
+  box-shadow: -16px 14px 20px rgba(191, 241, 137, 1);
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
 }
 
-
-.gradient{
-  background: linear-gradient(to right ,#1D976C, #93F9B9);
+.gradient {
+  background: linear-gradient(to right, #1D976C, #93F9B9);
 }
-.card{
+
+.card {
   display: inline-block;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   padding-top: 7px;
   background-color: white;
-  margin:50px 7%;
+  margin: 50px 7%;
   width: 220px;
   height: 320px;
   border-radius: 8px;
-
 }
 
 .imgproduct {
-width: 100%;
-  }
+  width: 100%;
+}
 
-
-
-
-
-  .left{
-    float: left;
-    width: 60%;
-    /*background: yellow;*/
-    height: 40px;
-
-  }
-
+.left {
+  float: left;
+  width: 60%;
+  /*background: yellow;*/
+  height: 40px;
+}
 
 .right {
   height: 40px;
@@ -52,21 +46,20 @@ width: 100%;
   color: grey;
   float: left;
   /*background: blue;*/
-
 }
-.quantity{
+
+.quantity {
   width: 40px;
   height: 17px;
 }
 
-.button{
+.button {
   color: white;
   width: 100%;
-
   background: forestgreen;
   height: 30px;
-
 }
+
 .calculationcard {
   color: green;
 }
@@ -75,7 +68,6 @@ width: 100%;
   background: chartreuse;
 }
 
-.secondblock{
+.secondblock {
   padding: 10px;
-
 }
