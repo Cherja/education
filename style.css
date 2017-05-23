@@ -6,10 +6,10 @@
 }
 
 .card:hover {
-  box-shadow: -16px 14px 20px rgba(191, 241, 137, 1);
   -webkit-transform: translate(0, -10px);
   -moz-transform: translate(0, -10px);
   -o-transform: translate(0, -10px);
+  box-shadow: 0 50px 25px 0 rgba(0, 0, 0, 0.75);
 }
 
 .gradient {
