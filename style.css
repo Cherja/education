@@ -18,9 +18,7 @@
 
 .card {
   display: inline-block;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   padding-top: 7px;
   background-color: white;
   margin: 50px 7%;
