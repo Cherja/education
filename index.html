@@ -2,64 +2,64 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Shop</title>
-    <link rel="stylesheet" href="style_two.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="style_two.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 
 <body class="gradient">
-    <div class="block1">
-        <div class="card">
-            <img src="img/product/raspberries.jpg">
-            <div class="content">
-                <div class="price">
-                    <span class="rate">
-            $<span>4</span>
-                    <br>
-                    <span class="total_price">($TOTAL)</span>
-                    </span>
-                </div>
-                <div class="count">
-                    <label>QTY:<input type="number" min="1" value="1" oninput="changeCountInput(this)"></label>
-                </div>
-                <button class="add_to_cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART</button>
-            </div>
+  <div class="block1">
+    <div class="card" data-id="1">
+      <img src="img/product/raspberries.jpg">
+      <div class="content">
+        <div class="price">
+          <span>
+            $<span class="rate">4</span>
+          <br>
+          <span class="total_price">($TOTAL)</span>
+          </span>
         </div>
-        <div class="card">
-            <img src="img/product/cannabis.jpg">
-            <div class="content">
-                <div class="price">
-                    <span class="rate">
-            $<span>4.20</span>
-                    <br>
-                    <span class="total_price">($TOTAL)</span>
-                    </span>
-                </div>
-                <div class="count">
-                    <label>QTY:<input type="number" min="1" value="1" oninput="changeCountInput(this)"></label>
-                </div>
-                <button class="add_to_cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART</button>
-            </div>
+        <div class="count">
+          <label>QTY:<input data-id="1" type="number" min="1" value="1" oninput="changeCountInput(this)"></label>
         </div>
-        <div class="card">
-            <img src="img/product/absolyt.jpg">
-            <div class="content">
-                <div class="price">
-                    <span class="rate">
-            $<span>2.50</span>
-                    <br>
-                    <span class="total_price">($TOTAL)</span>
-                    </span>
-                </div>
-                <div class="count">
-                    <label>QTY:<input type="number" min="1" value="1" oninput="changeCountInput(this)"></label>
-                </div>
-                <button class="add_to_cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART</button>
-            </div>
-        </div>
+        <button class="add_to_cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART</button>
+      </div>
     </div>
-    <script src="index.js "></script>
+    <div class="card" data-id="2">
+      <img src="img/product/cannabis.jpg">
+      <div class="content">
+        <div class="price">
+          <span>
+            $<span class="rate">4.20</span>
+          <br>
+          <span class="total_price">($TOTAL)</span>
+          </span>
+        </div>
+        <div class="count">
+          <label>QTY:<input data-id="2" type="number" min="1" value="1" oninput="changeCountInput(this)"></label>
+        </div>
+        <button class="add_to_cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART</button>
+      </div>
+    </div>
+    <div class="card" data-id="3">
+      <img src="img/product/absolyt.jpg">
+      <div class="content">
+        <div class="price">
+          <span>
+            $<span class="rate">2.50</span>
+          <br>
+          <span class="total_price">($TOTAL)</span>
+          </span>
+        </div>
+        <div class="count">
+          <label>QTY:<input data-id="3" type="number" min="1" value="1" oninput="changeCountInput(this)"></label>
+        </div>
+        <button class="add_to_cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js "></script>
 
 </body>
 

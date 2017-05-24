@@ -1,9 +1,10 @@
 // calculationcard - калькуляция в карточке
 
 function changeCountInput(elem) {
-  var value = parseInt(elem.value);
-  var price = parseFloat(elem.parentElement.parentElement.parentElement.getElementsByClassName('rate')[0].children[0].textContent);
-  var totalPrice = (value * price).toFixed(2);
+  var cardId = elem.getAttribute('data-id'),
+    value = parseInt(elem.value),
+    price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
+    totalPrice = (value * price).toFixed(2);
 
-  elem.parentElement.parentElement.parentElement.getElementsByClassName('total_price')[0].textContent = '($' + totalPrice + ')';
+  document.querySelector('.card[data-id="' + cardId + '"] .total_price').textContent = '($' + totalPrice + ')';
 }
