@@ -1,3 +1,12 @@
+.name {
+
+    position: absolute;
+    top: -50px;
+    width:100%;
+    color: white;
+    font-family: "Lucida Grande", Sans-Serif;
+    font-size: 18px;
+}
 .ttr{
   position: fixed;
   top: 15px;
@@ -33,13 +42,14 @@ border-color: white;
 }
 
 .card {
+  position: relative;
   display: inline-block;
   transition: all 0.3s ease-in-out;
   background-color: white;
   margin: 1.5%;
   width: 30%;
   border-radius: 8px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -56,6 +66,7 @@ body {
 }
 .card img {
   width: 100%;
+  margin-top: 7px;
 }
 
 .card .content {
