@@ -26,7 +26,6 @@ function pressingbutton(cardId) {
 function tableAddRow(row) {
 
   var elem = document.createElement('tr');
-  console.dir(elem);
   elem.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td></td>';
 
 
