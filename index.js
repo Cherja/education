@@ -13,10 +13,10 @@ function pressingbutton(cardId) {
     name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
     totalPrice = (value * price).toFixed(2);
 
-  createtable(elem);
+  tableAddRow(elem);
 }
 
-function createtable(elem) {
+function tableAddRow(elem) {
 
   var elem = document.createElement('<tr><td>' + name + '</td><td>' + value + '</td><td>' + totalPrice + '</td></tr>')
 
