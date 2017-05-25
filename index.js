@@ -8,7 +8,15 @@ function changeCountInput(elem, cardId) {
 }
 
 function pressingbutton(cardId) {
-  var value = parseInt(document.querySelector('.card[data-id="' + cardId + '"] input').value),
+
+  var obj = {
+    soss: '3'
+  };
+  console.log(obj.soss);
+
+
+
+  value = parseInt(document.querySelector('.card[data-id="' + cardId + '"] input').value),
     price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
     name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
     totalPrice = (value * price).toFixed(2);
