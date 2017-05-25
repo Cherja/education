@@ -9,11 +9,17 @@ function changeCountInput(elem, cardId) {
 
 function pressingbutton(cardId) {
   var value = parseInt(document.querySelector('.card[data-id="' + cardId + '"] input').value),
-    price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent)
-  totalPrice = (value * price).toFixed(2);
-  // r = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
-  //   b = (value * r).toFixed(2);
-  console.log(totalPrice);
+    price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
+    name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
+    totalPrice = (value * price).toFixed(2);
+
+  createtable(elem);
+}
+
+function createtable(elem) {
+
+  var elem = document.createElement('<tr><td>' + name + '</td><td>' + value + '</td><td>' + totalPrice + '</td></tr>')
 
 
+  ttr.parentNode.appendChild(elem)
 }

@@ -8,9 +8,8 @@
     font-size: 18px;
 }
 .ttr{
-  position: fixed;
-  top: 15px;
-  right: 15px;
+
+  margin: auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   font-size: 14px;
   text-align: center;
@@ -38,7 +37,7 @@ border-color: white;
 .block1 {
   margin: auto;
   width: 960px;
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 .card {
