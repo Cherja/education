@@ -8,26 +8,27 @@ function changeCountInput(elem, cardId) {
 }
 
 function pressingbutton(cardId) {
-
-  var obj = {
-    soss: '3'
-  };
-  console.log(obj.soss);
-
-
-
-  value = parseInt(document.querySelector('.card[data-id="' + cardId + '"] input').value),
+  var value = parseInt(document.querySelector('.card[data-id="' + cardId + '"] input').value),
     price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
     name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
     totalPrice = (value * price).toFixed(2);
 
+  var elem = {
+    name: name,
+    price: price,
+    count: value,
+    totalPrice: totalPrice
+  }
+
   tableAddRow(elem);
 }
 
-function tableAddRow(elem) {
+function tableAddRow(row) {
 
-  var elem = document.createElement('<tr><td>' + name + '</td><td>' + value + '</td><td>' + totalPrice + '</td></tr>')
+  var elem = document.createElement('tr');
+  console.dir(elem);
+  elem.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td></td>';
 
 
-  ttr.parentNode.appendChild(elem)
+  ttr.appendChild(elem)
 }
