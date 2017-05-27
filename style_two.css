@@ -118,7 +118,7 @@ body {
 .card .content .add_to_cart {
   color: white;
   width: 100%;
-  background: forestgreen;
+  background-color: #1abc9c;
   height: 50px;
   margin-top: 15px;
   border: none;
@@ -134,9 +134,10 @@ body {
 }
 
 .card .content .add_to_cart:hover {
-  background: limegreen;
+  background-color: #48c9b0;
 }
 
 .card .content .add_to_cart:active {
+  background: #16a085;
   /*box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.2);*/
 }
