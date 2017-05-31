@@ -1,5 +1,9 @@
 /*quantity-количество,*/
 
+.card[data-id="1"] {
+  display: none !important;
+}
+
 .block1 {
   /*white-space: nowrap;*/
   margin: auto;

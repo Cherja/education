@@ -1,16 +1,18 @@
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 .name {
-    position: absolute;
-    top: -50px;
-    width:100%;
-    color: white;
-    font-family: "Lucida Grande", Sans-Serif;
-    font-size: 18px;
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  color: white;
+  font-family: "Lucida Grande", Sans-Serif;
+  font-size: 18px;
 }
-.ttr{
-display: none;
+
+.ttr {
+  display: none;
   margin: auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   font-size: 14px;
@@ -18,23 +20,21 @@ display: none;
 }
 
 .ttr th {
-border-color: white;
-border-width: 0 1px 1px 0;
-border-style: solid;
-background: green;
-color: white;
-padding: 10px 20px;
+  border-color: white;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  background: green;
+  color: white;
+  padding: 10px 20px;
 }
 
 .ttr td {
-padding: 10px 20px;
-background: #F8E391;
-border-style: solid;
-border-width: 0 1px 1px 0;
-border-color: white;
+  padding: 10px 20px;
+  background: #F8E391;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
 }
-
-
 
 .block1 {
   margin: auto;
@@ -59,12 +59,12 @@ border-color: white;
   transform: translate(0, -5px);
 }
 
-
 body {
-    background: linear-gradient(to right, #1c92d2, #f2fcfe);
-    font-family: sans-serif;
-    background-size: cover;
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+  font-family: sans-serif;
+  background-size: cover;
 }
+
 .card img {
   width: 100%;
   margin-top: 7px;
