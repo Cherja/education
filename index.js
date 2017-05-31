@@ -38,7 +38,7 @@ for (var i = 0; i < arrayButtons.length; i++) {
 function tableAddRow(row) {
   var newNode = document.createElement('tr');
 
-  newNode.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td class="action">1</td>';
+  newNode.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td></td>';
 
   ttr.appendChild(newNode)
 }
