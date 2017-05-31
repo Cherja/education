@@ -15,15 +15,6 @@ for (var i = 0; i < array.length; i++) {
     console.log(enik);
 }
 
-// console.log(document.getElementsByTagName('input'));
-
-
-
-function changeCountInput(elem, cardId) {
-    // console.dir(document.querySelector('.card[data-id="' + cardId + '"] .rate'));
-
-}
-
 function pressingbutton(cardId) {
     var value = document.querySelector('.card[data-id="' + cardId + '"] input').valueAsNumber,
         price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
