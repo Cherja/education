@@ -1,41 +1,44 @@
-// calculationcard - калькуляция в карточке
+var arrayInputs = document.getElementsByTagName('input');
+for (var i = 0; i < arrayInputs.length; i++) {
+  var enik = arrayInputs[i];
+  enik.oninput = function(e) {
+    var elem = e.target,
+      cardId = elem.getAttribute('data-id'),
+      value = elem.valueAsNumber,
+      price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
+      totalPrice = (value * price).toFixed(2);
 
-var array = document.getElementsByTagName('input');
-for (var i = 0; i < array.length; i++) {
-    var enik = array[i];
-    enik.oninput = function(e) {
-        var elem = e.target,
-            cardId = elem.getAttribute('data-id'),
-            value = elem.valueAsNumber,
-            price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
-            totalPrice = (value * price).toFixed(2);
-
-        document.querySelector('.card[data-id="' + cardId + '"] .total_price').textContent = '($' + totalPrice + ')';
-    }
-    console.log(enik);
+    document.querySelector('.card[data-id="' + cardId + '"] .total_price').textContent = '($' + totalPrice + ')';
+  }
 }
 
-function pressingbutton(cardId) {
-    var value = document.querySelector('.card[data-id="' + cardId + '"] input').valueAsNumber,
-        price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
-        name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
-        totalPrice = parseFloat((value * price).toFixed(2));
+
+var arrayButtons = document.getElementsByTagName('button');
+for (var i = 0; i < arrayButtons.length; i++) {
+  var enik = arrayButtons[i];
+  enik.onclick = function(e) {
+    var elem = e.target,
+      cardId = elem.getAttribute('data-id'),
+      value = document.querySelector('.card[data-id="' + cardId + '"] input').valueAsNumber,
+      price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
+      name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
+      totalPrice = parseFloat((value * price).toFixed(2));
 
     var elem = {
-        name: name,
-        price: price,
-        count: value,
-        totalPrice: totalPrice
+      name: name,
+      price: price,
+      count: value,
+      totalPrice: totalPrice
     }
 
     tableAddRow(elem);
+  }
 }
 
-function tableAddRow(elem) {
+function tableAddRow(row) {
+  var newNode = document.createElement('tr');
 
-    var elem = document.createElement('tr');
-    elem.innerHTML = '<td>' + elem.name + '</td><td>' + elem.count + '</td><td>' + elem.totalPrice + '</td><td></td>';
+  newNode.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td class="action">1</td>';
 
-
-    ttr.appendChild(elem)
+  ttr.appendChild(newNode)
 }
