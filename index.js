@@ -52,7 +52,7 @@ function tableAddRow(row) {
       currentPrice = parseFloat(tdPrice.textContent);
 
     tdCount.textContent = currentCount + row.count;
-    tdPrice.textContent = currentPrice + row.totalPrice;
+    tdPrice.textContent = parseFloat((currentPrice + row.totalPrice).toFixed(2));
 
     return;
   }
@@ -62,9 +62,9 @@ function tableAddRow(row) {
   newNode.setAttribute('data-id', row.cardId)
 
   newNode.innerHTML = '<td>' + row.name + '</td>' +
-                      '<td class="row_count">' + row.count + '</td>' +
-                      '<td class="row_totalPrice">' + row.totalPrice + '</td>' +
-                      '<td></td>';
+    '<td class="row_count">' + row.count + '</td>' +
+    '<td class="row_totalPrice">' + row.totalPrice + '</td>' +
+    '<td></td>';
 
   ttr.appendChild(newNode)
 
