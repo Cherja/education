@@ -2,6 +2,14 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+.ttr.deleteRow {
+  display: none;
+}
+
+.deleteRow:hover {
+  display: inline;
+}
+
 .name {
   position: absolute;
   top: -50px;
