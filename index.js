@@ -44,10 +44,15 @@ function tableAddRow(row) {
   var tr = document.querySelector('#ttr tr[data-id="' + row.cardId + '"]');
 
   if (tr) {
-    var ss = document.querySelectorAll('#ttr tr[data-id="' + row.cardId + '"]');
-    console.log(ss);
+    var
+      tdCount = tr.querySelector('.row_count'),
+      tdPrice = tr.querySelector('.row_totalPrice'),
 
+      currentCount = parseInt(tdCount.textContent),
+      currentPrice = parseFloat(tdPrice.textContent);
 
+    tdCount.textContent = currentCount + row.count;
+    tdPrice.textContent = currentPrice + row.totalPrice;
 
     return;
   }
@@ -56,7 +61,10 @@ function tableAddRow(row) {
 
   newNode.setAttribute('data-id', row.cardId)
 
-  newNode.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td></td>';
+  newNode.innerHTML = '<td>' + row.name + '</td>' +
+                      '<td class="row_count">' + row.count + '</td>' +
+                      '<td class="row_totalPrice">' + row.totalPrice + '</td>' +
+                      '<td></td>';
 
   ttr.appendChild(newNode)
 
