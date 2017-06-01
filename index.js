@@ -1,12 +1,14 @@
 var arrayInputs = document.getElementsByTagName('input');
 for (var i = 0; i < arrayInputs.length; i++) {
   var enik = arrayInputs[i];
+
   enik.oninput = function(e) {
     var elem = e.target,
       cardId = elem.getAttribute('data-id'),
       value = elem.valueAsNumber,
       price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
       totalPrice = (value * price).toFixed(2);
+
 
     document.querySelector('.card[data-id="' + cardId + '"] .total_price').textContent = '($' + totalPrice + ')';
   }
@@ -19,6 +21,7 @@ for (var i = 0; i < arrayButtons.length; i++) {
   enik.onclick = function(e) {
     var elem = e.target,
       cardId = elem.getAttribute('data-id'),
+
       value = document.querySelector('.card[data-id="' + cardId + '"] input').valueAsNumber,
       price = parseFloat(document.querySelector('.card[data-id="' + cardId + '"] .rate').textContent),
       name = document.querySelector('.card[data-id="' + cardId + '"] .name').textContent,
@@ -41,6 +44,10 @@ function tableAddRow(row) {
   var tr = document.querySelector('#ttr tr[data-id="' + row.cardId + '"]');
 
   if (tr) {
+    var ss = document.querySelectorAll('#ttr tr[data-id="' + row.cardId + '"]');
+    console.log(ss);
+
+
 
     return;
   }
@@ -52,4 +59,5 @@ function tableAddRow(row) {
   newNode.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td></td>';
 
   ttr.appendChild(newNode)
+
 }
