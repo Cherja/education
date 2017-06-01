@@ -12,7 +12,7 @@ input::-webkit-inner-spin-button {
 }
 
 .ttr {
-  display: none;
+  /*display: none;*/
   margin: auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
   font-size: 14px;

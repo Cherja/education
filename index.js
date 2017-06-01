@@ -25,6 +25,7 @@ for (var i = 0; i < arrayButtons.length; i++) {
       totalPrice = parseFloat((value * price).toFixed(2));
 
     var elem = {
+      cardId: cardId,
       name: name,
       price: price,
       count: value,
@@ -36,7 +37,17 @@ for (var i = 0; i < arrayButtons.length; i++) {
 }
 
 function tableAddRow(row) {
+
+  var tr = document.querySelector('#ttr tr[data-id="' + row.cardId + '"]');
+
+  if (tr) {
+
+    return;
+  }
+
   var newNode = document.createElement('tr');
+
+  newNode.setAttribute('data-id', row.cardId)
 
   newNode.innerHTML = '<td>' + row.name + '</td><td>' + row.count + '</td><td>' + row.totalPrice + '</td><td></td>';
 
