@@ -3,15 +3,15 @@ input::-webkit-inner-spin-button {
 }
 
 .deleteRow {
-  color: transparent;
+  visibility: hidden;
   text-align: right;
   height: 44px;
   width: 40px;
   font-size: 25px;
 }
 
-.deleteRow:hover {
-  color: white;
+#ttr tr:hover .deleteRow {
+  visibility: visible;
   text-align: right;
   height: 44px;
   width: 40px;
