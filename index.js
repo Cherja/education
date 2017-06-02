@@ -64,7 +64,7 @@ function tableAddRow(row) {
   newNode.innerHTML = '<td>' + row.name + '</td>' +
     '<td class="row_count">' + row.count + '</td>' +
     '<td class="row_totalPrice">' + row.totalPrice + '</td>' +
-    '<button class="deleteRow">' + '<i class="fa fa-hand-scissors-o" aria-hidden="true"></i> ' + '</button>';
+    '<td class="deleteRow">' + '<button class="deleteBut" >' + '<i class="fa fa-hand-scissors-o" aria-hidden="true"></i> ' + '</button>' + '</td>';
 
 
 
