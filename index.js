@@ -64,13 +64,16 @@ function tableAddRow(row) {
   newNode.innerHTML = '<td>' + row.name + '</td>' +
     '<td class="row_count">' + row.count + '</td>' +
     '<td class="row_totalPrice">' + row.totalPrice + '</td>' +
-    '<td class="deleteRow">' + '<button class="deleteBut" >' + '<i class="fa fa-hand-scissors-o" aria-hidden="true"></i> ' + '</button>' + '</td>';
-
-
-
-
-
+    '<td class="deleteRow">' + '<button class="deleteBut" id="deleteBut">' + '<i class="fa fa-hand-scissors-o" aria-hidden="true"></i> ' + '</button>' + '</td>';
 
   ttr.appendChild(newNode)
 
+}
+
+
+deleteBut.onclick = function(e) {
+  var elem = e.target,
+    strId = elem.getAttribute('data-id'),
+    content = document.querySelector('#ttr tr[data-id="' + strId + '"]');
+  content.parentNode.removeChild(content);
 }
