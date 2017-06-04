@@ -2,22 +2,21 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.deleteRow {
+
+
+ .deleteBut {
+  border: none;
   visibility: hidden;
 }
 
-#ttr tr:hover .deleteRow {
-  background-color: transparent;
-  border: none;
-  visibility: visible;
-}
-
-.deleteBut {
+#ttr tr:hover .deleteBut {
   font-size: 30px;
   background-color: transparent;
   border: none;
   padding: 0;
   color: white;
+  cursor: pointer;
+  visibility: visible;
 }
 
 .name {
