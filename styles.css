@@ -1,124 +1,248 @@
-  /* сброс стилей браузера */
+/* сброс стилей браузера */
 
-  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* конец кода сброса стилей браузера */
+
+.clear:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(93, 43, 78);
+  background-image: linear-gradient(to left, rgb(93, 43, 78), rgb(8, 2, 50));
+  padding-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  padding-top: 30px;
+  clear: both;
+  padding-left: 10px;
+}
+
+nav {
+  background-color: rgb(25, 25, 25);
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-left: none;
+  border-right: none;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  float: left;
+  font-size: .8em;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 10px;
+  border-right: 1px dashed rgba(255, 255, 255, .75);
+  transition: all .5s;
+}
+
+nav li:last-of-type a {
+  border-right: none;
+}
+
+nav a:hover {
+  background-color: rgb(93, 43, 78);
+}
+
+aside h2 {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+aside h3 {
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+aside p, aside li {
+  font-size: .75em;
+  margin-top: 10px;
+}
+
+.main h2 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.main h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.main p {
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 15px;
+  font-size: .8em;
+  padding: 10px 10px 30px 10px;
+  background-color: black;
+  color: rgb(204, 204, 204);
+}
+
+footer a {
+  color: white;
+}
+
+
+/* пользовательские стили  */
+
+.columnWrapper {
+  float: left;
+  width: 80%;
+}
+
+.sidebar1 {
+  float: left;
+  width: 25%;
+  padding: 0 20px 0 10px;
+}
+
+.main {
+  float: right;
+  width: 75%;
+  padding: 0 20px;
+  border-left: dashed 1px rgb(153, 153, 153);
+  border-right: dashed 1px rgb(153, 153, 153);
+}
+
+.sidebar2 {
+  float: right;
+  width: 20%;
+  padding: 0 10px 0 20px;
+}
+
+footer {
+  clear: both;
+}
+
+nav ul, header h1, footer p, .contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.half {
+  max-width: 50%;
+}
+
+img.left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+img.right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+@media (min-width: 481px) and (max-width:768px) {
+  .columnWrapper {
+    width: auto;
   }
-
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+  .sidebar2 {
+    float: none;
+    width: auto;
+    clear: both;
+    border-top: 2px solid black;
+    padding-top: 10px;
   }
-
-  body {
-    line-height: 1.2;
+  main {
+    border-right: none;
   }
+}
 
-  ol {
-    padding-left: 1.4em;
-    list-style: decimal;
+@media (max-width:480px) {
+  .columnWrapper, .main, .sidebar1, .sidebar2 {
+    float: none;
+    width: auto;
   }
-
-  ul {
-    padding-left: 1.4em;
-    list-style: square;
+  main {
+    border: none;
   }
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  .sidebar1, .sidebar2 {
+    border-top: 2px solid black;
+    margin-top: 25px;
+    padding-top: 10px;
   }
-  /* конец кода сброса стилей браузера */
-
-  body {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  }
-
-  header {
-    background-color: blue;
-    padding-top: 20px;
-  }
-
-  .container {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px 0 30px 0;
-    text-align: right;
-    position: relative;
-  }
-
   header h1 {
-    font-size: 2.2em;
-    margin: 0 0 10px 0;
-    color: rgb(255, 255, 255);
+    font-size: 1.5em;
   }
-
   nav {
-    margin-left: 200px;
+    text-align: center;
   }
-
   nav li {
-    display: inline;
-  }
-
-  nav a {
+    float: none;
     display: inline-block;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #ffffff;
-    padding: 10px 20px;
-    background: #ff932d;
-    border-radius: 5px;
-    border: 1px solid #c95e00;
-    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.7);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.7);
-    text-shadow: 0px -1px 1px rgba(000, 000, 000, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.3);
   }
-  /* пользовательские стили  */
-
   nav a {
-    transition: transform .5s, background-color 1s ease-in 2s;
+    float: none;
+    display: inline-block;
+    border: none;
   }
-
-  nav a:hover {
-    -webkit-transform: scale(1.2);
-    transform: rotate(10deg) scale(1.2);
-    background-color: red;
-  }
-
-  .logo {
-    position: absolute;
-    /*z-index: 100;*/
-    left: 0;
-  }
-  /*@-webkit-keyframes logo {
-    from {
-      -webkit-transform: rotate(0) scale(.5);
-      left: 20%;
-    }
-    to {
-      -webkit-transform: rotate(-720deg) scale(1);
-      left: 0;
-    }
-  }*/
-
-  @-webkit-keyframes logo {
-    from {
-      -webkit-transform: rotate(0) scale(1);
-      left: 100%
-    }
-    50% {
-      -webkit-transform: rotate(-720deg) scale(.5);
-      left: 0;
-    }
-    to {
-      -webkit-transform: rotate(0) scale(1);
-    }
-  }
-
-  .logo {
-    -webkit-animation: logo 10s;
-  }
+}
