@@ -38,16 +38,6 @@ table {
 
 /* конец кода сброса стилей браузера */
 
-.clear:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-.clear {
-  zoom: 1;
-}
-
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -61,13 +51,12 @@ header {
 header h1 {
   font-size: 3em;
   color: white;
-  font-weight: bold;
   padding-top: 30px;
-  clear: both;
   padding-left: 10px;
 }
 
 nav {
+  overflow: hidden;
   background-color: rgb(25, 25, 25);
   border: 1px solid rgba(255, 255, 255, .5);
   border-left: none;
@@ -75,8 +64,7 @@ nav {
 }
 
 nav ul {
-  padding: 0;
-  margin: 0;
+  overflow: hidden;
 }
 
 nav li {
@@ -87,18 +75,16 @@ nav li {
 }
 
 nav a {
-  float: left;
+  display: block;
   font-size: .8em;
   color: white;
-  font-weight: normal;
   text-decoration: none;
   padding: 10px;
-  border-right: 1px dashed rgba(255, 255, 255, .75);
   transition: all .5s;
 }
 
-nav li:last-of-type a {
-  border-right: none;
+nav li+li {
+  border-left: 3px dashed rgba(255, 255, 255, .75);
 }
 
 nav a:hover {
@@ -174,8 +160,8 @@ footer a {
   padding: 0 10px 0 20px;
 }
 
-footer {
-  clear: both;
+.contentWrapper {
+  overflow: hidden;
 }
 
 nav ul, header h1, footer p, .contentWrapper {
@@ -240,9 +226,7 @@ img.right {
     float: none;
     display: inline-block;
   }
-  nav a {
-    float: none;
-    display: inline-block;
+  nav li+li {
     border: none;
   }
 }
