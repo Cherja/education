@@ -3,10 +3,8 @@
 }
 
 .wrap {
-  width: 960px;
-  height: 2200px;
+  width: 1250px;
   margin: auto;
-  background-color: rgba(0, 0, 0, .05);
 }
 
 .header {
@@ -18,47 +16,110 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
 }
 
-nav {
-  margin: 0 auto;
-  max-width: 960px;
+.logo img {
+  max-width: 100%;
+  width: 100px;
+  vertical-align: middle;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.logo {
+  border: none;
+  display: inline-block;
+}
+
+.frame {
+  width: 1200px;
+  margin: auto;
   text-align: center;
 }
 
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
 nav li {
-  display: inline;
+  display: inline-block;
 }
 
 nav a {
-  display: inline-block;
+  display: block;
   padding: 9px 20px;
   border-radius: 20px;
   text-decoration: none;
   color: black;
-  font-size: .7em;
+  font-size: 20px;
   border: 1px solid white;
   margin-right: 5px;
 }
 
 nav a:hover {
-  border: 1px solid orange;
+  border-color: orange;
 }
 
 button {
-  font-size: .7em;
+  cursor: pointer;
+  font-size: 20px;
   background-color: orange;
   border-radius: 7px;
   padding: 9px 20px;
   margin: 10px;
   border: none;
-  ;
 }
 
 button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.firstblock {
+  display: table-cell;
+  vertical-align: middle;
+  background-image: url(girl.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.firstcontent {
+  font-size: 25px;
+  padding: 10%;
+  width: 1200px;
+  margin: auto;
+  text-align: left;
+  font-style: italic;
+}
+
+.bell {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.bell button {
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 1px 4px rgba(255, 91, 0, .5);
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes bell {
+  from {
+    -webkit-transform: scale(.7);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(.7);
+  }
+}
+
+.bell {
+  -webkit-animation: bell 3s;
+  animation-iteration-count: infinite;
 }
