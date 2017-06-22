@@ -50,7 +50,7 @@ nav a:hover {
 button {
   cursor: pointer;
   font-size: 20px;
-  background-color: orange;
+  background-color: #ffc501;
   border-radius: 7px;
   padding: 9px 20px;
   margin: 10px;
@@ -87,10 +87,10 @@ button:hover {
 
 .bell button {
   cursor: pointer;
-  background-color: orange;
+  background-color: #ffc501;
   border-radius: 50%;
   border: none;
-  box-shadow: 0 0 1px 4px rgba(255, 91, 0, .5);
+  box-shadow: 0 0 0px 4px rgba(255, 197, 1, 0.47);
   margin: 0;
   padding: 0;
 }
@@ -108,8 +108,13 @@ button:hover {
 }
 
 .bell {
+  z-index: 10;
   -webkit-animation: bell 3s;
   animation-iteration-count: infinite;
+}
+
+.bell:hover {
+  animation-play-state: paused;
 }
 
 .secondblock {
@@ -118,29 +123,43 @@ button:hover {
 
 .manbox {
   position: absolute;
-  left: 100px;
-  bottom: 20px;
+  left: 140px;
+  bottom: -100px;
+  animation: manbox 1s;
 }
 
-h1, p {
-  text-align: center;
+@-webkit-keyframes manbox {
+  from {
+    transform: scale(1);
+    left: -300px;
+  }
+  to {
+    transform: scale(1);
+    left: 140px;
+  }
 }
 
-.blockright {
-  padding-left: 500px;
-  padding-right: 200px;
-}
-
-.displaytable {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100vh;
-}
-
-.blockright p {
-  text-align: left;
+.orangeline {
+  margin: auto;
+  width: 220px;
+  border: 3px solid #ffc501;
 }
 
 .backorange {
-  background-color: orange;
+  background-color: #ffc501;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+h2, h3 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.rightblock {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-left: 450px;
+  padding-right: 90px;
+  padding-top: 20px;
 }
