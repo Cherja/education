@@ -1,297 +1,332 @@
-  * {
-    box-sizing: border-box;
-  }
-
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
-    z-index: 15;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .logo {
-    vertical-align: middle;
-    padding: 0;
-    border: none;
-    display: inline-block;
-  }
-
-  .ham {
-    display: none;
-  }
-
-  .frame {
-    width: 1170px;
-    margin: auto;
-  }
-
-  nav ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-
-  nav li {
-    display: inline-block;
-  }
-
-  nav a {
-    display: block;
-    padding: 7px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    border: 1px solid white;
-    margin-right: 5px;
-  }
-
-  nav a:hover {
-    border-color: orange;
-  }
-
-  button {
-    cursor: pointer;
-    font-size: 20px;
-    background-color: #ffc501;
-    border-radius: 7px;
-    padding: 9px 20px;
-    margin: 10px;
-    border: none;
-    outline: none;
-  }
-
-  button:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-  }
-
-  .firstblock {
-    background-image: url(../img/girl.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .tabblecell {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100vh;
-    width: 100%;
-    font-size: 25px;
-    padding-left: 100px;
-    text-align: left;
-  }
-
-  .tabblecell h3 {
-    text-align: left;
-  }
-
-  .bell {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-  }
-
-  .bell button {
-    cursor: pointer;
-    background-color: #ffc501;
-    border-radius: 50%;
-    border: none;
-    box-shadow: 0 0 0px 4px rgba(255, 197, 1, 0.47);
-    margin: 0;
-    padding: 0;
-  }
-
-  @-webkit-keyframes bell {
-    from {
-      -webkit-transform: scale(.7);
+    * {
+      box-sizing: border-box;
     }
-    50% {
-      transform: scale(1.5);
-    }
-    to {
-      -webkit-transform: scale(.7);
-    }
-  }
 
-  .bell {
-    z-index: 10;
-    -webkit-animation: bell 3s;
-    animation-iteration-count: infinite;
-  }
-
-  .bell:hover {
-    animation-play-state: paused;
-  }
-
-  .secondblock {
-    position: relative;
-  }
-
-  .manbox {
-    position: absolute;
-    left: 140px;
-    bottom: -100px;
-    animation: manbox 1s;
-  }
-
-  @-webkit-keyframes header {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
-
-  @-webkit-keyframes manbox {
-    from {
-      transform: scale(1);
-      left: -300px;
-    }
-    to {
-      transform: scale(1);
-      left: 140px;
-    }
-  }
-
-  .orangeline {
-    margin: auto;
-    width: 220px;
-    border: 3px solid #ffc501;
-  }
-
-  .backorange {
-    background-color: #ffc501;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
-  }
-
-  h2, h3 {
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .rightblock {
-    font-size: 18px;
-    line-height: 1.5;
-    padding-left: 450px;
-    padding-right: 90px;
-    padding-top: 20px;
-  }
-
-  @media (min-width: 981px) and (max-width:1125px) {
-    ul {
-      font-size: 15px;
-      padding: 0;
-    }
-    ul li a {
-      padding: 7px;
-    }
-  }
-
-  @media (min-width: 480px) and (max-width:980px) {
-    button:hover {
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
-    }
-    .manbox {
-      display: none;
-    }
-    .ham {
-      display: block;
+    .header {
       position: fixed;
-      z-index: 20;
+      top: 0;
+      left: 0;
       width: 100%;
       background-color: white;
       box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
+      z-index: 15;
     }
-    .rightblock {
-      font-size: 18px;
-      line-height: 1.5;
-      padding: 0;
-    }
-    .frame {
-      width: 480px;
-      margin: auto;
-    }
-    nav {
-      text-align: center;
-      vertical-align: middle;
-    }
-    nav li {
-      display: block;
-    }
-    nav .logo {
-      display: none;
-    }
-    .header {
-      display: none;
-      position: static;
-      padding-top: 60px;
-      animation: header .5s;
-    }
-    .active {
-      display: block;
-    }
-  }
 
-  @media (min-width: 150px) and (max-width:479px) {
-    .manbox {
-      display: none;
-    }
-    button:hover {
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
-    }
-    .ham {
-      display: block;
-      position: fixed;
-      z-index: 20;
-      width: 100%;
-      background-color: white;
-      box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
-    }
-    .rightblock {
-      font-size: 18px;
-      line-height: 1.5;
-      padding: 0;
-    }
-    .frame {
-      width: 90%;
-      margin: auto;
-    }
-    nav {
-      text-align: center;
-      vertical-align: middle;
-    }
-    nav li {
-      display: block;
-    }
-    nav .logo {
-      display: none;
-    }
-    .header {
-      display: none;
-      position: static;
-      padding-top: 60px;
-    }
     .active {
       display: block;
     }
+
+    .logo {
+      vertical-align: middle;
+      padding: 0;
+      border: none;
+      display: inline-block;
+    }
+
+    .ham {
+      display: none;
+    }
+
+    .frame {
+      width: 1170px;
+      margin: auto;
+    }
+
+    nav ul {
+      display: inline-block;
+      list-style-type: none;
+    }
+
+    nav li {
+      display: inline-block;
+    }
+
+    nav a {
+      display: block;
+      padding: 7px 15px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      border: 1px solid white;
+      margin-right: 5px;
+    }
+
+    nav a:hover {
+      border-color: orange;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      background-color: #ffc501;
+      border-radius: 7px;
+      padding: 9px 20px;
+      margin: 10px;
+      border: none;
+      outline: none;
+    }
+
+    button:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    }
+
+    .firstblock {
+      background-image: url(../img/girl.jpg);
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
     .tabblecell {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100vh;
+      width: 100%;
       font-size: 25px;
+      padding-left: 100px;
+      text-align: left;
+    }
+
+    .tabblecell h3 {
+      text-align: left;
+    }
+
+    .bell {
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+    }
+
+    .bell button {
+      cursor: pointer;
+      background-color: #ffc501;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0 0 0px 4px rgba(255, 197, 1, 0.47);
+      margin: 0;
       padding: 0;
     }
-    .tabblecell h3 {
+
+    .item1, .item2, .item3 {
+      text-align: center;
+      vertical-align: top;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      transition: 1s;
+    }
+
+    .item1:hover, .item2:hover, .item3:hover {
+      transform: scale(1.05);
+    }
+
+    .fourthblock button {
       text-align: center;
     }
-    nav button {
-      margin: 0;
+
+    .receiptblock span {
+      width: 160px;
+      height: 145px;
+      background-image: url(../img/steps-sprite.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      margin: auto;
     }
-  }
+
+    .receiptblock .item2 span {
+      background-position: -160px 0;
+    }
+
+    .receiptblock .item3 span {
+      background-position: -320px 0;
+    }
+
+    .receiptblock {
+      /*text-align: center;*/
+      width: 950px;
+      margin: auto;
+    }
+
+    @-webkit-keyframes bell {
+      from {
+        -webkit-transform: scale(.7);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      to {
+        -webkit-transform: scale(.7);
+      }
+    }
+
+    .bell {
+      z-index: 10;
+      -webkit-animation: bell 3s;
+      animation-iteration-count: infinite;
+    }
+
+    .bell:hover {
+      animation-play-state: paused;
+    }
+
+    .secondblock {
+      position: relative;
+    }
+
+    .manbox {
+      position: absolute;
+      left: 140px;
+      bottom: -100px;
+      animation: manbox 1s;
+    }
+
+    @-webkit-keyframes manbox {
+      from {
+        transform: scale(1);
+        left: -300px;
+      }
+      to {
+        transform: scale(1);
+        left: 140px;
+      }
+    }
+
+    .orangeline {
+      margin: auto;
+      width: 220px;
+      border: 3px solid #ffc501;
+    }
+
+    .backorange {
+      background-color: #ffc501;
+      padding-bottom: 20px;
+      margin-bottom: 100px;
+    }
+
+    h2, h3 {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .rightblock {
+      font-size: 18px;
+      line-height: 1.5;
+      padding-left: 450px;
+      padding-right: 90px;
+      padding-top: 20px;
+    }
+
+    @media (min-width: 981px) and (max-width:1125px) {
+      ul {
+        font-size: 15px;
+        padding: 0;
+      }
+      ul li a {
+        padding: 7px;
+      }
+    }
+
+    @media (min-width: 480px) and (max-width:980px) {
+      button:hover {
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+      }
+      .manbox {
+        display: none;
+      }
+      .ham {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+        background-color: white;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
+      }
+      .rightblock {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 0;
+      }
+      .frame {
+        width: 480px;
+        margin: auto;
+      }
+      nav {
+        text-align: center;
+        vertical-align: middle;
+      }
+      nav li {
+        display: block;
+      }
+      nav .logo {
+        display: none;
+      }
+      .header {
+        /*display: none;*/
+        position: fixed;
+        padding-top: 60px;
+        transform: scale(0);
+        /*animation: header .5s;*/
+        transition: all 1s;
+      }
+      .active {
+        /*display: block;*/
+        transform: scale(1);
+      }
+    }
+
+    @media (min-width: 150px) and (max-width:479px) {
+      .manbox {
+        display: none;
+      }
+      button:hover {
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+      }
+      .ham {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+        background-color: white;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
+      }
+      .rightblock {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 0;
+      }
+      .frame {
+        width: 90%;
+        margin: auto;
+      }
+      nav {
+        text-align: center;
+        vertical-align: middle;
+      }
+      nav li {
+        display: block;
+      }
+      nav .logo {
+        display: none;
+      }
+      .header {
+        display: none;
+        position: static;
+        padding-top: 60px;
+      }
+      .active {
+        display: block;
+      }
+      .tabblecell {
+        font-size: 25px;
+        padding: 0;
+      }
+      .tabblecell h3 {
+        text-align: center;
+      }
+      nav button {
+        margin: 0;
+      }
+    }
